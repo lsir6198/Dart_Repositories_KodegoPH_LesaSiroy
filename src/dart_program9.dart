@@ -1,0 +1,10 @@
+void main(){
+  for(int counter = 1; counter < 5; counter++){
+    print("hello");
+  }
+
+  bool counter = true;
+  while(counter){
+    print("hello");
+  }
+}
