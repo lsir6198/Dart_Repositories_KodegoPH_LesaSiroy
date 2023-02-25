@@ -3,20 +3,29 @@
       //-> blueprint of an object
 
 class Person{
-  late String name;
-  late int age;
+  late String _name;
+  late int _age;
 
   Person(){
-    name = "Eugene";
-    age = 18;
+    _name = "Eugene";
+    _age = 18;
+  }
+
+  String getName(){
+    return _name;
+  }
+
+  void setName(String name){
+    name = name;
   }
 
   void displayName(){
-    print("My name is $name");
+    print("My name is $_name");
   }
 
 }
 
+/*
 void main(){
   Person eugene = Person();
   print(eugene.name);
@@ -25,4 +34,4 @@ void main(){
   print(eugene.age);
 
   eugene.displayName();
-}
+}*/
